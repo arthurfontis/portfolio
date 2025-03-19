@@ -20,9 +20,15 @@
     color: var(--cor-letras)
 }
 body{
-    background-color: white
+    background-color: white;
+    overflow-x: hidden;
+
 }
 
+img {
+    max-width: 100%; 
+    height: auto;
+}
 header {
     display: flex;
     justify-content: space-between;
@@ -30,6 +36,7 @@ header {
     background-image: linear-gradient(to right, var(--cor-secundaria), var(--cor-terciaria));
     padding: 10px 20px; 
     height: 80px;
+    width: 94%;
 }
 .logo {
     font-size: 24px;
@@ -53,7 +60,7 @@ section#about{
 }
 
 h2{
-    width: 98vw;
+    width: 100%; 
     text-align: center;
     height: 45px;
     border-radius: 30px;
@@ -65,7 +72,7 @@ section#projects {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    width: 100vw; 
+    width: 100%; 
     height: 100vh;
     padding-top: 60px;
     overflow-x: hidden; 
@@ -73,8 +80,8 @@ section#projects {
 }
 
 section#projects > h2 {
+    width: 100%; 
     height: 40px;
-    width: 98vw;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -86,4 +93,76 @@ section#projects > div#imagem {
     position: relative;
     margin-top: 20px;
     overflow: hidden; 
+}
+
+section#projects > a > button {
+    font-size: 1.00002em;
+    background-color: var(--cor-terciaria);
+    border: 0px;
+    border-radius: 5px;
+    width: 170px;
+    height: 45px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+section#projects > a > button:hover {
+    background-color: var(--cor-secundaria);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+section#techs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    margin-top: -200px;
+}
+section#techs > h2 {
+    width: 100%; 
+    margin-bottom: 20px; 
+}
+
+section#techs > div#icons{
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+}
+#icons img {
+    width: 140px; 
+    height: auto; 
+}
+
+footer {
+    text-align: left;
+    width: 100%;
+    padding: 20px;
+    background-color: var(--cor-primaria);
+    box-sizing: border-box;
+}
+
+footer h3 {
+    font-size: 1.7em;
+    margin-bottom: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    margin-bottom: 10px;
+}
+
+.contact-item img {
+    width: 24px; 
+    height: auto;
+}
+
+.contact-item p {
+    margin-left: 20px; 
+    font-size: 18px;
+    font-weight: bold;
 }
