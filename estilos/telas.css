@@ -1,1 +1,54 @@
-@charset "UTF-8";
+@charset "UTF-8"
+@media (max-width: 930px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'cabecalho'
+            'main'
+            'rodape';
+    }
+
+    header {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+
+    main h2 {
+        
+        width: 90%;
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .projects {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .projects .card {
+        width: 90%;
+        height: auto;
+    }
+
+    .projects img {
+        width: 100%;
+        height: auto;
+    }
+
+    .techs img {
+        width: 70px;
+    }
+
+    footer h3 {
+        font-size: 20px;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+}
