@@ -1,29 +1,27 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
+  "description": "Meu portfólio profissional",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp",
+    "test": "echo \"No test specified\" && exit 0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/arthurfontis/portfolio.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Arthur Fontis",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/arthurfontis/portfolio/issues"
   },
   "homepage": "https://github.com/arthurfontis/portfolio#readme",
-  "description": "",
   "devDependencies": {
     "@babel/core": "^7.27.3",
     "@babel/preset-env": "^7.27.2",
     "@fortawesome/fontawesome-free": "^6.7.2",
-    "babel-core": "6.26.3",
-    "babel-preset-env": "1.6.1",
-    "font-awesome": "4.7.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^7.0.1",
     "gulp-concat": "^2.6.1",
